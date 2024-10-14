@@ -46,9 +46,12 @@ namespace Tyuiu.KomarovaMV.Sprint2.Task5.V10.Lib
 
 
             }
-            dat ="Вчерашняя дата:"+n+"."+m+"."+g;
+            if (n < 10 && m<10) { dat = "0" + n + ".0" + m + "." + g; }
+            else if (n > 10 && m < 10) { dat = n + ".0" + m + "." + g; }
+            else if (n < 10 && m > 10) { dat = "0"+n + "." + m + "." + g; }
+            else { dat = n + "." + m + "." + g; }
             return dat;
-            }
+        }
         
         }
     }
