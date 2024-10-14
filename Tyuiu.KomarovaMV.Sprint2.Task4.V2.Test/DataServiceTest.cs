@@ -17,10 +17,10 @@ namespace Tyuiu.KomarovaMV.Sprint2.Task4.V2.Test
         public void ValidCalculate2()
         {
             DataService ds = new DataService();
-            double x = 6;
-            double y = 1;
+            double x = 9;
+            double y = 4;
             double res = ds.Calculate(x, y);
-            Assert.AreEqual(13.000, res);
+            Assert.AreEqual(11.500, res);
         }
     }
 }
